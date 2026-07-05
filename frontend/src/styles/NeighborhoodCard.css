@@ -1,0 +1,145 @@
+.neighborhood-card {
+
+    background: var(--surface);
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid var(--border);
+
+    margin-bottom: 24px;
+
+    transition: .25s ease;
+}
+
+.neighborhood-card:hover {
+
+    transform: translateY(-5px);
+}
+
+.recommended {
+
+    border: 2px solid var(--primary);
+}
+
+.card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 24px;
+}
+
+.card-header h2 {
+
+    margin: 0;
+
+    color: var(--text);
+}
+
+.card-header p {
+
+    margin-top: 8px;
+
+    color: var(--secondary);
+}
+
+.lifescore-circle {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.lifescore-circle span {
+
+    font-size: 2rem;
+}
+
+.lifescore-circle small {
+
+    font-size: .75rem;
+}
+
+.score-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 16px;
+}
+
+.score-box {
+
+    background: var(--bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    text-align: center;
+}
+
+.score-box h4 {
+
+    margin: 0;
+
+    color: var(--secondary);
+
+    font-size: .9rem;
+}
+
+.score-box span {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    color: var(--text);
+}
+
+.recommendation-badge {
+
+    margin-top: 24px;
+
+    background: rgba(34, 197, 94, .15);
+
+    color: var(--success);
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    font-weight: 600;
+}

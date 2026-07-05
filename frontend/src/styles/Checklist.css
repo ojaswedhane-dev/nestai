@@ -1,0 +1,33 @@
+.checklist-card {
+
+    background: var(--surface);
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
+
+    padding: 24px;
+}
+
+.checklist-columns {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 32px;
+}
+
+.checklist-card h3 {
+
+    color: var(--primary);
+}
+
+.checklist-card li {
+
+    margin-bottom: 12px;
+
+    color: var(--secondary);
+}

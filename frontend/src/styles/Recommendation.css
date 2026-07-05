@@ -1,0 +1,49 @@
+.recommendation-card {
+
+    background: var(--surface);
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
+
+    margin-bottom: 24px;
+}
+
+.recommendation-title {
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.recommendation-card h2 {
+
+    margin-top: 0;
+
+    color: var(--text);
+}
+
+.recommendation-card p {
+
+    color: var(--secondary);
+
+    line-height: 1.6;
+}
+
+.recommendation-card ul {
+
+    margin-top: 18px;
+
+    padding-left: 22px;
+}
+
+.recommendation-card li {
+
+    margin-bottom: 10px;
+}

@@ -1,0 +1,217 @@
+/* ==========================================================
+   NestAI Dashboard Layout
+   ========================================================== */
+
+.app-container {
+
+  width: min(1400px, 100%);
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+
+  padding-bottom: 48px;
+}
+
+/* ==========================================================
+   Dashboard Row
+   ========================================================== */
+
+.dashboard-row {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 24px;
+
+  align-items: start;
+}
+
+/* ==========================================================
+   Section
+   ========================================================== */
+
+.section {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.section-title {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 0;
+
+  font-size: 1.6rem;
+
+  color: var(--text);
+
+  font-weight: 700;
+}
+
+.section-subtitle {
+
+  margin-top: -10px;
+
+  color: var(--secondary);
+
+  font-size: .95rem;
+}
+
+/* ==========================================================
+   Neighborhood Section
+   ========================================================== */
+
+.neighborhood-section {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.neighborhood-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+  gap: 24px;
+}
+
+/* ==========================================================
+   Recommendation + Checklist
+   ========================================================== */
+
+.bottom-grid {
+
+  display: grid;
+
+  grid-template-columns: 1.2fr .8fr;
+
+  gap: 24px;
+}
+
+/* ==========================================================
+   Nice Fade Animation
+   ========================================================== */
+
+.fade-in {
+
+  animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(14px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================
+   Scrollbar
+   ========================================================== */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+
+  background: var(--border);
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+  background: var(--primary);
+}
+
+/* ==========================================================
+   Responsive
+   ========================================================== */
+
+@media (max-width: 1100px) {
+
+  .dashboard-row {
+
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .neighborhood-grid {
+
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .app-container {
+
+    padding-inline: 10px;
+  }
+
+  .section-title {
+
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .dashboard-row {
+
+    gap: 18px;
+  }
+
+  .bottom-grid {
+
+    gap: 18px;
+  }
+
+  .neighborhood-grid {
+
+    gap: 18px;
+  }
+
+  .app-container {
+
+    gap: 18px;
+  }
+}

@@ -1,0 +1,77 @@
+.preferences-card {
+
+    background: var(--surface);
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow: var(--shadow);
+
+    border: 1px solid var(--border);
+
+    margin-bottom: 24px;
+}
+
+.preferences-card h2 {
+
+    margin-top: 0;
+
+    color: var(--text);
+
+    margin-bottom: 22px;
+}
+
+.preferences-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.preference-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 16px;
+
+    background: var(--bg);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    transition: .25s ease;
+}
+
+.preference-item:hover {
+
+    transform: translateY(-3px);
+
+    background: color-mix(in srgb, var(--primary) 8%, var(--surface));
+}
+
+.icon {
+
+    font-size: 2rem;
+}
+
+.preference-item h4 {
+
+    margin: 0;
+
+    color: var(--text);
+}
+
+.preference-item p {
+
+    margin-top: 6px;
+
+    color: var(--secondary);
+}
