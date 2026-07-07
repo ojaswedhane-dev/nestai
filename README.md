@@ -253,8 +253,6 @@ npm run dev
 
 # 📸 Screenshots
 
-> *(Add screenshots before submission.)*
-
 - Dashboard
 - Dark Mode
 - ADK Agent Trace
